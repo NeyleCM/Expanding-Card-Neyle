@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const removeGrandeClass = () => {
         imageCards.forEach(card => {
             card.classList.remove('grande');
+            card.classList.add('small')
         })
     }
 
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => {
         removeGrandeClass();
         card.classList.add('grande');
+        card.classList.remove('small')
         });
     })
 })

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,6 +50,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
 } 
 
 .containerCards {
@@ -60,7 +66,7 @@ body {
     margin: 20px;
 }
 
-.imageCard{
+.imageCard {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -87,6 +93,16 @@ justify-content: flex-start;
 flex: 20;
 }
 
+.small {
+display: flex;
+justify-content: flex-start;
+flex: 3;
+}
+
+.small h2 {
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0.4s;
+}
 .uno {
     background-image: url('./img/puente.jpg');
 }
@@ -104,4 +120,10 @@ flex: 20;
 
 .cinco {
     background-image: url('./img/Montaña.jpg');
+}
+
+@media (max-width: 480px) {
+  .containerCards {
+    width: 100vw;
+  }
 }
